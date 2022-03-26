@@ -1,70 +1,97 @@
+/* ------ base element style ------ */
 * {
     margin: 0;
     padding: 0;
 }
+p, li {
+    font-size: 12px;
+}
+
+/* ------ Navigation ------ */
 #tabs{
     padding: 0.8em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     background-color: lightgrey;
 }
 #tabs p{
-    display: inline;    
+    display: inline-block;    
 }
 
 #tabs ul{
     text-align: right;
     float: right;
 }
-
 #tabs ul li{
     display: inline-block;
-    text-align: right;
-    width: 4em;      
 }
+
+/* ------ Heading ------ */
+
 #heading{
     background-color: skyblue;
     padding: 80px;   
 }
 
 #heading h1{
+    font-size: 5vw;
     text-align: center; 
 }
 
+
+/* ------ main section layout ------ */
+
 section{
-    overflow: hidden;
     margin-left: 10% ;
     margin-right: 10%;
 }
 section h2{
+    font-size: 3vw;
     text-align: center;
     padding: 1em;
 }
 
-section div{
-    overflow: hidden;
+section div{  
     margin: 0 auto;
     text-align: center;
-    white-space: nowrap;
 }
 section div article{
     display: inline-block;
-    text-align: center;
+
     padding-top:1%;
-    padding-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-bottom: 10%;
+    padding-left: 20% auto;
+    padding-right: 20% auto;
     margin: 1%;
     background-color: bisque;
-}
-section div article p{
-    text-align: center;
+    width: 40%;
 }
 
+/* ------ footer ------ */
+
+footer {
+    margin-top: 1em;
+}
 footer p{
     margin: 0 auto;
     display: table;
-    padding: 1em;
+    padding: 1%;
     text-align: center;
     background-color: aquamarine;
+}
+
+/* ------ media form ------ */
+
+@media (min-width: 500px){
+    p, li {
+        font-size: 1.5vw;
+    }
+    #tabs{
+        padding: 0.8em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        background-color: lightgrey;
+    }
+    #tabs ul li{
+        display: inline-block;
+        width:4em;
+    }
 }
