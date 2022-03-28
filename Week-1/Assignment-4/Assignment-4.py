@@ -13,10 +13,11 @@ def binary_search_position(numbers, target):
     return -1
 
 print(binary_search_position([1, 2, 5, 6, 7], 1)) # should print 0
+print(binary_search_position([1, 2, 5, 6, 7], 2)) # should print 1
 print(binary_search_position([1, 2, 5, 6, 7], 6)) # should print 3
 print(binary_search_position([1, 2, 5, 6, 7], 7)) # should print 4
-print(binary_search_position([1, 2, 5, 6, 7, 8, 11, 15, 19, 31], 19)) # should print 8
-print(binary_search_position([1, 2, 5, 6, 7, 8, 11, 15, 19, 31], 31)) # should print 9
-print(binary_search_position([1, 2, 5, 6, 7, 8, 11, 15, 19, 31, 51], 31)) # should print 9
-print(binary_search_position([1, 2, 5, 6, 7, 8, 11, 15, 19, 31, 51], 51)) # should print 10
-print(binary_search_position([1, 2, 5, 6, 7, 8, 11, 15, 19, 31, 51], 100)) # should print -1
+print(binary_search_position([1, 2, 5, 6, 7, 11], 1)) # should print 0
+print(binary_search_position([1, 2, 5, 6, 7, 11], 2)) # should print 1
+print(binary_search_position([1, 2, 5, 6, 7, 11], 7)) # should print 4
+print(binary_search_position([1, 2, 5, 6, 7, 11], 11)) # should print 5
+print(binary_search_position([1, 2, 5, 6, 7, 11], 100)) # should print -1
