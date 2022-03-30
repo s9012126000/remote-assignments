@@ -1,0 +1,101 @@
+/* ------ base element style ------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+p, li {
+    font-size: 12px;
+}
+
+/* ------ Navigation ------ */
+#tabs{
+    padding: 0.8em;
+    background-color: lightgrey;
+}
+#tabs p{
+    display: inline-block;    
+}
+
+#tabs ul{
+    text-align: right;
+    float: right;
+}
+#tabs ul li{
+    display: inline-block;
+}
+
+/* ------ Heading ------ */
+
+#heading{
+    background-color: skyblue;
+    padding: 80px;   
+}
+#heading:hover{
+    background-color: slateblue;
+}
+#heading h1{
+    font-size: 5vw;
+    text-align: center; 
+}
+
+
+/* ------ main section layout ------ */
+
+section{
+    margin-left: 10% ;
+    margin-right: 10%;
+}
+section h2{
+    font-size: 3vw;
+    text-align: center;
+    padding: 1em;
+}
+
+section div{  
+    margin: 0 auto;
+    text-align: center;
+}
+section div article{
+    display: inline-block;
+
+    padding-top:1%;
+    padding-bottom: 10%;
+    padding-left: 20% auto;
+    padding-right: 20% auto;
+    margin: 1%;
+    background-color: bisque;
+    width: 40%;
+}
+
+/* ------ button ------ */
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+button p{
+    margin: 0 auto;
+    padding: 1%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* ------ media form ------ */
+
+@media (min-width: 500px){
+    p, li {
+        font-size: 1.5vw;
+    }
+    #tabs{
+        padding: 0.8em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        background-color: lightgrey;
+    }
+    #tabs ul li{
+        display: inline-block;
+        width:4em;
+    }
+}
