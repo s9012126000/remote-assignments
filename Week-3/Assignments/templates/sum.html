@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Simple arithmetic series!</h1>
+    <p>Input a value!</p>
+    <input id="value">
+    <button type="button" onclick="getSum()">Calculating</button>
+    <p id = 'ans'></p>
+
+    <script>
+    function getSum() {
+        let input_val = document.querySelector('#value').value;
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById('ans').innerHTML = this.responseText;
+            }
+        };
+        req.open("GET", "data?number="+input_val, true);
+        req.send();
+    }
+    </script>
+</body>
+</html>
