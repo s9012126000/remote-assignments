@@ -19,16 +19,10 @@ def data(number=None):
     if number:
         try:
             int_num = int(number)
-            string = ''
             tol = 0
             for num in range(int_num):
                 tol += num+1
-                string += str(num+1)
-                if num+1 == int_num:
-                    string += ' = '
-                else:
-                    string += ' + '
-            return string + str(tol)
+            return str(tol)
         except ValueError:
             return "Wrong Parameter"
     else:
