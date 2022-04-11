@@ -1,3 +1,4 @@
 .DS_Store
 *.pdf
 backup/
+__pycache__/
