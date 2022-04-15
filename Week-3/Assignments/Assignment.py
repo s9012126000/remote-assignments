@@ -1,4 +1,4 @@
-from flask import (Flask, request,redirect,url_for,
+from flask import (Flask, request,redirect,
                    render_template, make_response)
 DEBUG = True
 PORT = 3000
