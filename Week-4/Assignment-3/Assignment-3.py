@@ -32,6 +32,11 @@ def home():
 def sign_up():
     key.acquire()
     cursor = MyDb.cursor()
+    
+    # request data for jmeter testing
+    # email = request.json['email']
+    # password = request.json['password']
+    
     email = request.form['email']
     password = request.form['password']
     cursor.execute('SELECT email FROM assignment.user WHERE email=%s', (email,))
